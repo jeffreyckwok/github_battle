@@ -1,0 +1,12 @@
+<div *ngIf="player1Info.score>player2Info.score">
+  <h2>First Place</h2>
+  <p>{{player1Info.username}} (score: {{player1Info.score}})</p>
+  <h2>Second Place</h2>
+  <p>{{player2Info.username}} (score: {{player2Info.score}})</p>
+</div>
+<div *ngIf="player1Info.score<player2Info.score">
+  <h2>First Place</h2>
+  <p>{{player2Info.username}} (score: {{player2Info.score}})</p>
+  <h2>Second Place</h2>
+  <p>{{player1Info.username}} (score: {{player1Info.score}})</p>
+</div>
